@@ -19,7 +19,6 @@ header .header-div div {
   align-items: end;
   justify-content: center;
   padding-right: 2.1875rem;
-  gap: 0.625rem;
 }
 header .header-div div p {
   font-family: "Nunito", sans-serif;
@@ -40,6 +39,14 @@ header .header-div div a {
 }
 header .header-div div a img {
   margin-right: 0.625rem;
+}
+header .navbar {
+  background-color: #504F4F !important;
+}
+header .navbar .nav-item {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

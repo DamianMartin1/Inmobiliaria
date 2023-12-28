@@ -1,0 +1,191 @@
+main{
+    .carousel{
+        position: relative;
+        width: 100%;
+        .div-cartel{
+            position: absolute;
+            bottom: 3.125rem;
+            left: 6.25rem;
+            h1{
+                font-family: 'Nunito', sans-serif;
+                font-size: 6.25rem;
+                font-weight: 700;
+                color: white;
+            }
+            h2{
+                font-family: 'Nunito', sans-serif;
+                font-size: 6.25rem;
+                font-weight: 700;
+                color: white;
+            }
+            h3{
+                font-family: 'Nunito', sans-serif;
+                font-size: 6.25rem;
+                font-weight: 700;
+                color: white;
+            }
+        }
+        .d-block{
+            height: 46.875rem;
+        }
+    }
+    .form-buscar{
+        position: relative;
+        form{
+            position: absolute;
+            bottom: 20.625rem;
+            right: 6.25rem;
+            height: 18.125rem;
+            width: 21.25rem;
+            border-radius: .25rem;
+            background-color: rgba(255, 255, 255, 0.705);
+            display: grid;
+            grid-template-columns: repeat(2, 150px);
+            grid-template-rows: repeat(2, 53px);
+            grid-template-areas: 
+                "option1 option2"
+                "option3 option4"
+            ;
+            justify-content: space-around;
+            gap: 1rem;
+            padding-top: 1.25rem;
+            .option1{
+                grid-area: option1;
+                padding-left: 1.8rem;
+                .input-s{
+                    height: 1.875rem;
+                    width: 7.5rem;
+                    &:focus{
+                        border-radius: .25rem;
+                        border-color: rgba(67, 236, 236, 0.5) ;
+                        box-shadow:  0 0 .4375rem rgb(88, 128, 182);
+                        outline: none;
+                    }
+                }
+                label{
+                    font-family: 'Nunito', sans-serif;
+                    letter-spacing: .0625rem;
+                }
+            }
+            .option2{
+                grid-area: option2;
+                .input-s{
+                    height: 1.875rem;
+                    width: 7.5rem;
+                    &:focus{
+                        border-radius: .25rem;
+                        border-color: rgba(67, 236, 236, 0.5) ;
+                        box-shadow:  0 0 .4375rem rgb(88, 128, 182);
+                        outline: none;
+                    }
+                }
+                label{
+                    font-family: 'Nunito', sans-serif;
+                    letter-spacing: .0625rem;
+                }
+            }
+            .option3{
+                grid-area: option3;
+                margin-left: 1.875rem;
+                label{
+                    font-family: 'Nunito', sans-serif;
+                    letter-spacing: .0625rem;
+                }
+                input{
+                    color: #fff;
+                    height: 1.875rem;
+                    width: 7.5rem;
+                    &:focus{
+                        border-radius: .25rem;
+                        border-color: rgba(67, 236, 236, 0.5) ;
+                        box-shadow:  0 0 .4375rem rgb(88, 128, 182);
+                        outline: none;
+                    }
+                }
+            }
+            .option4{
+                grid-area: option4;
+                margin-top: 1.5625rem;
+                input{
+                    height: 1.875rem;
+                    width: 7.5rem;
+                    &:focus{
+                        border-radius: .25rem;
+                        border-color: rgba(67, 236, 236, 0.5) ;
+                        box-shadow:  0 0 .4375rem rgb(88, 128, 182);
+                        outline: none;
+                    }
+                }
+            }
+            button{
+                font-family: 'Nunito', sans-serif;
+                font-weight: 700;
+                font-size: 1.25rem;
+                color: #ffffff;
+                width: 8.75rem;
+                height: 3.125rem;
+                border: 0;
+                border-radius: 4px;
+                background-color: #26ff0079;
+                margin: 2.1875rem 1.5625rem;
+                .icon{
+                    width: 1.875rem;
+                    filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(7484%) hue-rotate(284deg) brightness(106%) contrast(100%);
+                }
+            }
+        }
+    }
+    .div-cartel{
+        display: flex;
+        justify-content: center;
+        padding-top: 1.25rem;
+        h3{
+            font-family: 'Nunito', sans-serif;
+            font-size: 3.125rem;
+            font-weight: 700;
+            color: black;
+        }
+    }
+    .padre-destacado{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 1.875rem;
+        div{
+            img{
+                width: 15.625rem;
+                height: 15.625rem;
+                cursor: pointer;
+                box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+                backdrop-filter: blur(6px); 
+                transition: all 0.5s;
+            &:hover{
+                border: 1px solid black;
+                transform: scale(1.05);
+            }
+            }
+            h5{
+                width: 4.375rem;
+                height: 1.875rem;
+                position: relative;
+                bottom: 15rem;
+                text-align: center;
+                background-color: lightgreen;
+                color: white;
+                font-size: 1.3125rem;
+                text-shadow: 2px 2px rgb(44, 43, 43);
+                font-weight: 700;
+                letter-spacing: .0625rem;
+            }
+            h6{
+                width: 6.875rem;
+                height: 1.25rem;
+                position: relative;
+                bottom: 3.8125rem;
+                left: .25rem;
+                text-align: center;
+                background-color: lightgreen;
+            }
+        }
+    }
+}

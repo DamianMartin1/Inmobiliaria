@@ -5,8 +5,22 @@
   padding: 0;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
 header {
-  height: 12.0625rem;
+  height: 11.4375rem;
 }
 header .header-div {
   height: 60%;
@@ -19,6 +33,7 @@ header .header-div div {
   align-items: end;
   justify-content: center;
   padding-right: 2.1875rem;
+  gap: 1rem;
 }
 header .header-div div p {
   font-family: "Nunito", sans-serif;
@@ -85,23 +100,46 @@ header .navbar .d-flex label {
   transition: 0.3s;
 }
 
-main {
-  background-image: url("../assets/img/bangkok-tailandia-12-agosto-2016-hermosa-sala-lujo.jpg");
+main .carousel {
+  position: relative;
   width: 100%;
-  height: 100vh;
-  background-size: cover;
+}
+main .carousel .div-cartel {
+  position: absolute;
+  bottom: 3.125rem;
+  left: 6.25rem;
+}
+main .carousel .div-cartel h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 6.25rem;
+  font-weight: 700;
+  color: white;
+}
+main .carousel .div-cartel h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 6.25rem;
+  font-weight: 700;
+  color: white;
+}
+main .carousel .div-cartel h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 6.25rem;
+  font-weight: 700;
+  color: white;
+}
+main .carousel .d-block {
+  height: 46.875rem;
 }
 main .form-buscar {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  padding-right: 9.375rem;
+  position: relative;
 }
 main .form-buscar form {
-  height: 15.6875rem;
+  position: absolute;
+  bottom: 20.625rem;
+  right: 6.25rem;
+  height: 18.125rem;
   width: 21.25rem;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   background-color: rgba(255, 255, 255, 0.705);
   display: grid;
   grid-template-columns: repeat(2, 150px);
@@ -109,7 +147,7 @@ main .form-buscar form {
   grid-template-areas: "option1 option2" "option3 option4";
   justify-content: space-around;
   gap: 1rem;
-  padding-top: 0.625rem;
+  padding-top: 1.25rem;
 }
 main .form-buscar form .option1 {
   grid-area: option1;
@@ -189,11 +227,94 @@ main .form-buscar form button {
   border: 0;
   border-radius: 4px;
   background-color: rgba(38, 255, 0, 0.4745098039);
-  margin: 1rem 1.5625rem;
+  margin: 2.1875rem 1.5625rem;
 }
 main .form-buscar form button .icon {
   width: 1.875rem;
   filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(7484%) hue-rotate(284deg) brightness(106%) contrast(100%);
+}
+main .div-cartel {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.25rem;
+}
+main .div-cartel h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 3.125rem;
+  font-weight: 700;
+  color: black;
+}
+main .padre-destacado {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 1.875rem;
+}
+main .padre-destacado div img {
+  width: 15.625rem;
+  height: 15.625rem;
+  cursor: pointer;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  transition: all 0.5s;
+}
+main .padre-destacado div img:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+main .padre-destacado div h5 {
+  width: 4.375rem;
+  height: 1.875rem;
+  position: relative;
+  bottom: 15rem;
+  text-align: center;
+  background-color: lightgreen;
+  color: white;
+  font-size: 1.3125rem;
+  text-shadow: 2px 2px rgb(44, 43, 43);
+  font-weight: 700;
+  letter-spacing: 0.0625rem;
+}
+main .padre-destacado div h6 {
+  width: 6.875rem;
+  height: 1.25rem;
+  position: relative;
+  bottom: 3.8125rem;
+  left: 0.25rem;
+  text-align: center;
+  background-color: lightgreen;
+}
+
+.div-footer {
+  height: 9.375rem;
+  background-color: #504F4F;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: 100%;
+  grid-template-areas: ". parraf icons";
+}
+.div-footer .parrafo {
+  grid-area: parraf;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+.div-footer .iconos {
+  grid-area: icons;
+  display: flex;
+  justify-content: end;
+  padding-right: 2.5rem;
+  gap: 1rem;
+}
+.div-footer .iconos .fot-face {
+  width: 5rem;
+}
+.div-footer .iconos .fot-icon {
+  width: 5rem;
+  filter: invert(21%) sepia(93%) saturate(2145%) hue-rotate(105deg) brightness(102%) contrast(107%);
 }
 
 /*# sourceMappingURL=style.css.map */

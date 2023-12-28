@@ -1,0 +1,33 @@
+.div-footer {
+    height: 9.375rem;
+    background-color: #504F4F;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    ". parraf icons"
+    ;
+    .parrafo{
+        grid-area: parraf;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .iconos{
+        grid-area: icons;
+        display: flex;
+        justify-content: end;
+        padding-right: 2.5rem;
+        gap: 1rem;
+        .fot-face {
+            width: 5rem;
+        }
+        .fot-icon {
+            width: 5rem;
+            filter: invert(21%) sepia(93%) saturate(2145%) hue-rotate(105deg) brightness(102%) contrast(107%);
+        }
+    }
+}

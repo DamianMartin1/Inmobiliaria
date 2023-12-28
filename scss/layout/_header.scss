@@ -1,5 +1,5 @@
 header{
-    height: 12.0625rem;
+    height: 11.4375rem;
     .header-div{
         height: 60%;
         background-color: #CCC692;
@@ -10,6 +10,7 @@ header{
             align-items: end;
             justify-content: center;
             padding-right: 2.1875rem;
+            gap: 1rem;
             p{
                 font-family: 'Nunito', sans-serif;
                 font-weight: 700;

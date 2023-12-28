@@ -193,7 +193,6 @@ main .form-buscar form .option3 label {
   letter-spacing: 0.0625rem;
 }
 main .form-buscar form .option3 input {
-  color: #fff;
   height: 1.875rem;
   width: 7.5rem;
 }
@@ -309,10 +308,13 @@ main .padre-destacado div h6 {
   padding-right: 2.5rem;
   gap: 1rem;
 }
-.div-footer .iconos .fot-face {
+.div-footer .iconos a {
+  display: flex;
+}
+.div-footer .iconos a .fot-face {
   width: 5rem;
 }
-.div-footer .iconos .fot-icon {
+.div-footer .iconos a .fot-icon {
   width: 5rem;
   filter: invert(21%) sepia(93%) saturate(2145%) hue-rotate(105deg) brightness(102%) contrast(107%);
 }

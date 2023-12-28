@@ -22,12 +22,15 @@
         justify-content: end;
         padding-right: 2.5rem;
         gap: 1rem;
-        .fot-face {
-            width: 5rem;
-        }
-        .fot-icon {
-            width: 5rem;
-            filter: invert(21%) sepia(93%) saturate(2145%) hue-rotate(105deg) brightness(102%) contrast(107%);
+        a{
+            display: flex;
+            .fot-face {
+                width: 5rem;
+            }
+            .fot-icon {
+                width: 5rem;
+                filter: invert(21%) sepia(93%) saturate(2145%) hue-rotate(105deg) brightness(102%) contrast(107%);
+            }
         }
     }
 }

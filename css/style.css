@@ -6,7 +6,7 @@
 }
 
 header {
-  height: 12.5rem;
+  height: 12.0625rem;
 }
 header .header-div {
   height: 60%;
@@ -41,7 +41,7 @@ header .header-div div a img {
   margin-right: 0.625rem;
 }
 header .navbar {
-  background-color: #060b23 !important;
+  background-color: #504F4F !important;
 }
 header .navbar .nav-item {
   font-family: "Nunito", sans-serif;
@@ -68,10 +68,11 @@ header .navbar .d-flex input:focus ~ label {
   left: 0.9375rem;
   font-size: 1rem;
   padding: 0 0.125rem;
-  background: #060b23;
+  background: #504F4F;
+  padding: 0px 0.625rem;
 }
 header .navbar .d-flex input:focus {
-  box-shadow: 0 0 8px rgba(4, 121, 255, 0.7);
+  box-shadow: 0 0 0.4375rem rgb(88, 128, 182);
 }
 header .navbar .d-flex label {
   position: absolute;
@@ -82,6 +83,117 @@ header .navbar .d-flex label {
   font-size: 1.1875rem;
   pointer-events: none;
   transition: 0.3s;
+}
+
+main {
+  background-image: url("../assets/img/bangkok-tailandia-12-agosto-2016-hermosa-sala-lujo.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+main .form-buscar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 9.375rem;
+}
+main .form-buscar form {
+  height: 15.6875rem;
+  width: 21.25rem;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.705);
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  grid-template-rows: repeat(2, 53px);
+  grid-template-areas: "option1 option2" "option3 option4";
+  justify-content: space-around;
+  gap: 1rem;
+  padding-top: 0.625rem;
+}
+main .form-buscar form .option1 {
+  grid-area: option1;
+  padding-left: 1.8rem;
+}
+main .form-buscar form .option1 .input-s {
+  height: 1.875rem;
+  width: 7.5rem;
+}
+main .form-buscar form .option1 .input-s:focus {
+  border-radius: 0.25rem;
+  border-color: rgba(67, 236, 236, 0.5);
+  box-shadow: 0 0 0.4375rem rgb(88, 128, 182);
+  outline: none;
+}
+main .form-buscar form .option1 label {
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 0.0625rem;
+}
+main .form-buscar form .option2 {
+  grid-area: option2;
+}
+main .form-buscar form .option2 .input-s {
+  height: 1.875rem;
+  width: 7.5rem;
+}
+main .form-buscar form .option2 .input-s:focus {
+  border-radius: 0.25rem;
+  border-color: rgba(67, 236, 236, 0.5);
+  box-shadow: 0 0 0.4375rem rgb(88, 128, 182);
+  outline: none;
+}
+main .form-buscar form .option2 label {
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 0.0625rem;
+}
+main .form-buscar form .option3 {
+  grid-area: option3;
+  margin-left: 1.875rem;
+}
+main .form-buscar form .option3 label {
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 0.0625rem;
+}
+main .form-buscar form .option3 input {
+  color: #fff;
+  height: 1.875rem;
+  width: 7.5rem;
+}
+main .form-buscar form .option3 input:focus {
+  border-radius: 0.25rem;
+  border-color: rgba(67, 236, 236, 0.5);
+  box-shadow: 0 0 0.4375rem rgb(88, 128, 182);
+  outline: none;
+}
+main .form-buscar form .option4 {
+  grid-area: option4;
+  margin-top: 1.5625rem;
+}
+main .form-buscar form .option4 input {
+  height: 1.875rem;
+  width: 7.5rem;
+}
+main .form-buscar form .option4 input:focus {
+  border-radius: 0.25rem;
+  border-color: rgba(67, 236, 236, 0.5);
+  box-shadow: 0 0 0.4375rem rgb(88, 128, 182);
+  outline: none;
+}
+main .form-buscar form button {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #ffffff;
+  width: 8.75rem;
+  height: 3.125rem;
+  border: 0;
+  border-radius: 4px;
+  background-color: rgba(38, 255, 0, 0.4745098039);
+  margin: 1rem 1.5625rem;
+}
+main .form-buscar form button .icon {
+  width: 1.875rem;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(7484%) hue-rotate(284deg) brightness(106%) contrast(100%);
 }
 
 /*# sourceMappingURL=style.css.map */

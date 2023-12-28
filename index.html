@@ -38,7 +38,7 @@
                             <a class="nav-link active text-light" aria-current="page" href="#">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-light"  aria-current="page" href="#">Tasación</a>
+                            <a class="nav-link active text-light" aria-current="page" href="#">Tasación</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -49,31 +49,49 @@
             </div>
         </nav>
     </header>
-<main>
-    <section>
-        <div>
+    <main>
+        <section class="form-buscar">
             <form action="buscar">
-                <div>
-                    <label >Operación</label>
-                    <select name="Operación">
+                <div class="option1">
+                    <label>Operación</label>
+                    <select name="Operación" class="input-s">
                         <option value selected="select">Indistinto</option>
-                        <option value="1">hola</option>
-                        <option value="2">chau</option>
-                        <option value="3">como andas?</option>
+                        <option value="1">Venta</option>
+                        <option value="2">Alquiler</option>
+                        <option value="3">Alquiler Temporario</option>
                     </select>
                 </div>
-                
+                <div class="option2">
+                    <label>Tipo</label>
+                    <select name="Operación" class="input-s">
+                        <option value selected="select">Indistinto</option>
+                        <option value="1">Casa</option>
+                        <option value="2">Terreno</option>
+                        <option value="3">Departamento</option>
+                        <option value="3">PH</option>
+                    </select>
+                </div>
+                <div class="option3">
+                    <label >$ Precios</label>
+                    <input type="text" placeholder="desde">
+                </div>
+                <div class="option4">
+                    <input type="text" placeholder="hasta">
+                </div>
+                <button>
+                    <img src="./assets/img/icons8-búsqueda.svg" alt="" class="icon">
+                    Buscar
+                </button>
             </form>
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
 
 
 
 
 
 
-    
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>

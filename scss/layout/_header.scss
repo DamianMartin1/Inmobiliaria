@@ -1,5 +1,5 @@
 header{
-    height: 12.5rem;
+    height: 12.0625rem;
     .header-div{
         height: 60%;
         background-color: #CCC692;
@@ -33,7 +33,7 @@ header{
         }
     }
     .navbar {
-        background-color: #060b23 !important;
+        background-color: #504F4F !important;
         .nav-item{
             font-family: 'Nunito', sans-serif;
             font-size: 1.875rem;
@@ -57,10 +57,11 @@ header{
                     left: .9375rem;
                     font-size: 1rem;
                     padding: 0 .125rem;
-                    background: #060b23;
+                    background: #504F4F;
+                    padding: 0px .625rem;
                 }
                 &:focus {
-                    box-shadow:  0 0 8px rgba(4, 121, 255, 0.7);
+                    box-shadow:  0 0 .4375rem rgb(88, 128, 182);
                 }
             }
             label{
